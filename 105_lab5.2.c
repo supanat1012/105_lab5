@@ -8,22 +8,44 @@ int main()
     if(n%2==0)
         n=n-1;
 
-    for(i=0;i<n2;i++)
+    for(i=0;i<(n2)/2;i++)
     {
-        for(j=0; j<n; j++)
-        {
-            if(j==(n/2)-i)
+
+            for(j=0; j<n; j++)
             {
-                printf("*");
+                if(j==(n/2)-i)
+                {
+                    printf("*");
+                }
+                else if(j==(n/2)+i)
+                {
+                    printf("*");
+                }
+                else
+                    printf("_");
             }
-            else if(j==(n/2)+i)
+            printf("\n");
+
+    }
+
+    for(i=0;i<(n2)/2;i++)
+    {
+
+            for(j=0; j<n; j++)
             {
-                printf("*");
+                    if(j==i)
+                    {
+                        printf("*");
+                    }
+                    else if(j==i)
+                    {
+                        printf("*");
+                    }
+                    else
+                    printf("_");
             }
-            else
-                printf("_");
-        }
-        printf("\n");
+            printf("\n");
+
     }
 
 
