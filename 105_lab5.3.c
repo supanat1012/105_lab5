@@ -36,10 +36,10 @@ int main()
 
     }
 
-    for(i=0;i<100;i++)
+    /*for(i=0;i<100;i++)
     {
         printf("%d ",A[i]);
-    }
+    }*/
 
     scanf("%d",&a);
 
