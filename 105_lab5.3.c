@@ -4,7 +4,7 @@ int main()
     int n,i,A[1000],m,c=2,a;
 
     A[0]=1;
-    for(i=1;i<100;)
+    for(i=1;i<1000;)
     {
         n=c;
         m=n;
