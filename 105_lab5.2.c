@@ -27,6 +27,7 @@ int main()
             printf("\n");
 
     }
+
     if(n2%2==0)
         n2--;
     for(i=0;i<n2/2+1;i++)
