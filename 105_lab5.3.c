@@ -1,14 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int a,b,n,i,j,A[1000],x,m;
+    int n,i,A[1000],m,c=2,a;
 
-
+    A[0]=1;
     for(i=0;i<100;)
     {
-
+        n=c;
+        m=n;
        while (n!=1)
-       {    m=n;
+       {
             if (n%5==0)
             {
                 n=n/5;
@@ -23,17 +24,15 @@ int main()
             }
             else
             {
-                x=1;
                 break;
             }
             if(n=1)
                {
-                  A[i]=m;
+                  A[i+1]=m;
                   i++;
                }
-
         }
-       n=n+1;
+       c++;
 
     }
 
@@ -41,5 +40,7 @@ int main()
     {
         printf("%d ",A[i]);
     }
+
+    scanf("%d",&a);
 
 }
