@@ -3,9 +3,10 @@ int main()
 {
     int a,b,n,i,j,A[1000];
 
+    scanf("%d",&a);
     A[0]=1;
     for(i=2;i<20;i++)
-    {
+    {   b=0;
         while (i!=1)
         {
             if (i%5 == 0)
@@ -21,19 +22,15 @@ int main()
                 i=i/2;
             }
             else
-                break;
-
-            if(i==1)
-            {
-                A[i-1]=i;
-            }
-
-
+            b=1;
         }
+        if(b==0)
+            A[i]=i;
 
     }
 
-    for(i=0;i=;)
+    for(i=0;i<20;i++)
+      printf("%d",A[i]);
 
 
 
