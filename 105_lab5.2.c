@@ -8,17 +8,18 @@ int main()
     if(n%2==0)
         n=n-1;
 
-    for(;;)
+    for(i=0;i<(n)+1;i++)
     {
         for(j=0; j<n; j++)
         {
-            if(j==n/2)
+            if(j==n/(2+i*i))
             {
                 printf("*");
             }
             else
-                printf("-");
+                printf("_");
         }
+        printf("\n");
     }
 
 
